@@ -1,0 +1,28 @@
+{
+  "name": "morph-kz",
+  "version": "1.0.0",
+  "description": "JS Library for the declension and transformation of the words of the Kazakh language",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha src/index.test.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adilbekes/morph-kz.git"
+  },
+  "keywords": [
+    "morhp",
+    "kazakh",
+    "declension"
+  ],
+  "author": "Yeldos Adilbek <adilbek.es@gmail.com> (https://github.com/adilbekes/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adilbekes/morph-kz/issues"
+  },
+  "homepage": "https://github.com/adilbekes/morph-kz#readme",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "mocha": "6.2.0"
+  }
+}
