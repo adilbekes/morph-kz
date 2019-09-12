@@ -91,7 +91,7 @@ function pluralize(str) {
 /**
  * @param {string} str The noun/name/string
  * @param {number} side The side: my/our - 1, your/yours - 2, others - 3
- * @param {boolean} formal The number: formal - true, unformal - false (only when side is 2)
+ * @param {boolean} formal The number: formal - true, unformal - false (when side is 1 or 2)
  */
 function belong(str, side = 1, formal = false) {
     var ending = '';
@@ -144,10 +144,10 @@ function belong(str, side = 1, formal = false) {
 /**
  * @param {string} str The noun/name/string
  * @param {number} side The side: my/our - 1, your/yours - 2, others - 3
- * @param {boolean} formal The number: formal - true, unformal - false (only when side is 2)
  * @param {number} number The number: singular - 1, plural - 2
+ * @param {boolean} formal The number: formal - true, unformal - false (only when side is 2)
  */
-function personalize(str, side = 1, formal = false, number = 1) {
+function personalize(str, side = 1, number = 1, formal = false) {
     var ending = '';
     var newStr = str;
     str = str.toLowerCase();
